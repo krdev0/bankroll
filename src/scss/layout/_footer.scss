@@ -1,0 +1,32 @@
+.footer {
+  background-color: #222;
+  color: #737373;
+  padding:20px 0;
+  h3 {
+    color: $white;
+    font-size: 16px;
+  }
+
+  ul {
+      padding:0;
+      list-style: none;
+
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+  }
+
+  &__top {
+      .footer-menu {
+        
+      }
+  }
+
+  &__mid {
+  }
+
+  &__bottom {
+  }
+}
