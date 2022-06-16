@@ -22,7 +22,7 @@ require_once BANKROLL_DIR_PATH . '/inc/helpers/autoloader.php';
 
 function bankroll_get_theme_instance()
 {
-    \BANKROLL\Inc\BANKROLL_THEME::get_instance();
+    \BANKROLL\Inc\THEME::get_instance();
 }
 
 bankroll_get_theme_instance();

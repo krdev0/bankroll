@@ -10,7 +10,7 @@ namespace BANKROLL\Inc;
 
 use BANKROLL\Inc\Traits\Singleton;
 
-class BANKROLL_THEME
+class THEME
 {
     use Singleton;
 
@@ -43,29 +43,8 @@ class BANKROLL_THEME
 
     public function setup_theme()
     {
-
         add_theme_support('title-tag');
-        add_theme_support('custom-logo', array(
-            'height'               => 60,
-            'width'                => 200,
-            'flex-height'          => true,
-            'flex-width'           => true,
-            'header-text'          => array('site-title', 'site-description'),
-            'unlink-homepage-logo' => false,
-        ));
         add_theme_support('post-thumbnails', array('post'));
         add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script'));
-
-        add_image_size('menu_item_icon', 26, 26, true);
-        add_image_size('hero_block_bg', 1200, 400, true);
-        add_image_size('payment_methods', 40, 20, true);
-        add_image_size('operator_logo_small', 60, 30, false);
-        add_image_size('operator_logo_medium', 150, 50, false);
-        add_image_size('operator_logo_large', 300, 150, false);
-
-        global $content_width;
-        if (!isset($content_width)) {
-            $content_width = 1180;
-        }
     }
 }
